@@ -1,0 +1,329 @@
+/*
+
+font-family: 'Adamina', serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Annie Use Your Telescope', cursive;
+font-family: 'Lavishly Yours', cursive;
+font-family: 'Nanum Myeongjo', serif;
+
+*/
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Background image added */
+html{
+    background-image: url("image-from-rawpixel-id-2757133-original.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+    
+/* Logo- image and rounded background */
+.logo{
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.3;
+    background-color: #94AFAF;
+    border-radius: 100%;
+}
+.logo-container{
+    padding-top: 0.9rem;
+}
+
+.peace{
+    font-size: 2.5em;
+    color: #668A78;
+    font-family: 'Adamina', serif;
+}
+
+.online-yoga-club{
+    color: #69646E;
+    padding-left: 4.063rem;
+    line-height: 2vh;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.375em;
+}
+
+/* Navigation positioning // FLEX container */
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    top: 0%;
+    z-index: 1000;
+    padding-bottom: 3.125rem;
+}
+
+
+/* Navigation links // FLEX items */
+.nav-bar, li{
+    list-style: none;
+    display: inline-flex;
+    width: 45%;
+    color: #69646E;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3em;
+}
+
+/* Nav-links hover effect */
+.menu:hover{
+    padding: 1rem;
+    opacity: 0.60;
+    background-color: #fff;
+}
+
+/* banner section - slogan */
+.banner-container, .banner-slogan{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #668A78;
+    opacity: 0.8;
+    padding: 1.25em;
+}
+
+
+/* Main section with Round images and content  */
+
+.main-flex-container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+/* Image container */
+.round-image-container{
+    width: 50rem;
+    height: 50rem;
+    padding: 3em;
+    justify-content: center;
+}
+
+/* Image and ROUND background  */
+.img{
+    background-color: #668A78;
+    border-radius: 100%;
+    height: auto;
+    display: flex;
+    border: #fff solid 0.125rem;
+    width: 100%;
+}
+
+/*  image hover effect */
+.img:hover{
+    padding: 0.2rem;
+    background-color: #D7928B;
+}
+
+/* Main content container */
+.main-content-container{
+    display: flex;
+    font-size: 1.875em;
+    line-height: 3vh;  
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*_____   mobile gallery display  _______*/
+.mobile-image{
+    display: none;
+
+}
+
+/* Main content paragraph */
+.content{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    margin: 10rem 10rem 10rem 0rem;
+}
+
+/* Green color added to content headings */
+strong{
+    color: #668A78;
+    font-size: 1.5em;
+}
+
+strong:hover{
+color: #D7928B;
+}
+  
+/* responsive version for  content  */
+  @media only screen and (max-width: 1120px) {
+    .content{
+    font-size: 0.8em;
+    }
+  }
+
+  /* responsive version for  content  */
+  @media only screen and (max-width: 1020px) {
+    .content{
+    display: none;
+    }
+    .img{
+       width: 600px;
+       height: 600px;
+       margin: auto;
+    }
+
+    .menu{
+        font-size: 1em;
+    }
+  }
+
+  /* responsive version for  main content  */
+@media only screen and (max-width: 760px) {
+    .content{
+    display: none;
+    }
+
+    .img{
+       display: none;
+    } 
+  }
+
+    /* responsive version for  main content IMAGE GALLERY DISPLAY */
+@media only screen and (max-width: 760px) {
+    .content{
+    display: none;
+    }
+
+    .img{
+       display: none;
+    } 
+
+    .mobile-image{
+        display: block;
+        width: 540px;
+        height: auto;
+        margin: 100px 0px 80px 100px;
+    }
+
+    .main-flex-container{
+        max-height: 1500px;
+        justify-content: center;
+    }
+  }
+
+
+  /* Sign up Section */
+
+  /* main container for sign up section */
+  .container-sign-up{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      line-height: 4vh;
+      font-family: 'Amatic SC', cursive;
+      padding: 5rem;
+      background-color: #fff;
+      border: dotted 2px #668A78;  
+  }
+
+  .begin{
+    color: #668A78;   
+    font-size: 4em;
+    padding-bottom: 0.5em;
+  }
+
+  .sign-up{
+      color: #fff;
+      background-color: #D7928B;
+      font-size: 2.5em;
+      padding: 0.13em;
+      width: 50%;
+      margin: auto;
+      border-radius: 2%;
+  }
+
+  /* Sign up hover effect */
+  .sign-up:hover{
+    opacity: 0.60;
+    background-color: #668A78; 
+  }
+  
+
+
+  /* Team section image */
+
+  /* Team section- main container */
+.container-team-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #668A78; 
+}
+
+ /* Team section- image resizing and style */
+ .team-image{
+     width: 40rem;
+ }
+
+ /* Team image hover effect */
+ .team-image:hover{
+    padding: 0.2rem;
+}
+ 
+
+ /* FOOTER */
+footer{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    padding: 50px;
+    display: flex;
+    background-color: #D7928B;
+    color: 	#fff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media-icons, ul, li{
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+/*Social media icons styling, rounded background added */
+.instagram, .facebook, .twitter{
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: #668A78;
+    border-radius: 100%;
+    padding: 0.5em;
+}
+
+/* Social media hover effect */
+.instagram:hover{
+    padding: 1rem;
+    opacity: 0.60;
+    background-color: #fff;
+}
+.facebook:hover{
+    padding: 1rem;
+    opacity: 0.60;
+    background-color: #fff;
+}
+
+.twitter:hover{
+    padding: 1rem;
+    opacity: 0.60;
+    background-color: #fff;
+}
